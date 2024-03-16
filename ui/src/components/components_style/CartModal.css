@@ -1,0 +1,147 @@
+
+.cart-modal-container{
+    z-index: 100;
+    width: 500px;
+    height: 100vh;
+    padding: 0 10px;
+    text-align: center;
+    overflow-y: auto;
+    background-color: rgb(230, 234, 238);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+
+
+.cart-modal-header, .cart-modal-footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(181, 191, 199);
+    padding: 10px 0;
+}
+
+.cart-modal-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-modal-header{
+    position: relative;
+    font-size: 30px;
+}
+
+.cart-modal-header h2{
+    font-weight: 700;
+}
+
+.cart-modal-close{
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+
+.cart-modal-list{
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+.cart-modal-total-price-container{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.cart-modal-checkout-container button{
+    width: 80%;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    box-shadow: 4px 4px 5px #888888;
+    background-color:brown;
+    border-radius: 5px;
+}
+
+.cart-modal-checkout-container button:active{
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+/* //////////// cart item ///////////////// */
+
+.cart-item-container{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px black;
+    align-items: center;
+}
+
+.cart-item-img{
+    width: 70px;
+    height: 70px;
+}
+
+.cart-item-img img{
+    width: 70px;
+    height: 70px;
+}
+
+.cart-item-name{
+    width: 270px;
+    height: 60px;
+    font-size: clamp(12px, 1vw, 16px);
+    line-height: 16px;
+    padding: 0 10px;
+}
+
+.cart-item-count{
+    width: 20px;
+    height: 70px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-item-count-arithmetics, 
+.cart-item-count-number
+{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cart-item-count-arithmetics{
+    background-color: #52df1b;
+    border-radius: 50%;
+    font-size: 28px;
+    line-height: 14px;
+    user-select: none;
+}
+
+.cart-item-sum{
+    width: 80px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 10px;
+}
+
+.cart-item-del{
+    width: 25px;
+    height: 30px;
+    font-size: 22px;
+    line-height: 28px;
+    cursor: pointer;
+    color: red;
+}

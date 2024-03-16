@@ -1,0 +1,107 @@
+.header{
+    width: 100%;
+    height: 140px;
+    background-color: rgb(161, 160, 150);
+    padding: 10px  0;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.header-container{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header-logo img{
+    width: 120px;
+    height: 120px;
+    border-radius: 35px;
+}
+
+.header-nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.header-nav-top{
+    border-bottom: solid 1px black;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+    align-items: center;
+}
+
+.header-nav-bottom{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav-bottom-menu{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    
+}
+
+.header-nav-bottom-menu-sushi{
+    position: relative;
+}
+
+.header-nav-sushi-modal{
+    width: 100px;
+    height: 120px;
+    background-color: rgb(161, 160, 150);
+    border: solid 2px black;
+    border-radius: 4px;
+    font-size: 20px;
+    position: absolute;
+    padding: 10px;
+}
+
+.header-nav-sushi-modal li{
+    line-height: 30px;
+}
+
+.header-nav-sushi-modal li:hover{
+    box-shadow: 5px 5px 10px #888888;
+    background-color: rgb(128, 127, 119);
+}
+
+.header-nav-bottom-cart{
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav-top-contacts{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.header-nav-top-info{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.cart-count{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    right: -30%;
+    top: -20%;
+    text-align: center;
+    font-size: 18px;
+}
+
